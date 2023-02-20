@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
+import Calender from './Calender'
 import News from './News'
 import Recentnews from './Recentnews'
+import Teams from './Teams'
 
 const Staff = () => {
     return (
@@ -63,6 +65,8 @@ const Staff = () => {
 
                     <News />
                     <Recentnews />
+                    <Calender />
+                    <Teams />
              
         </div>
     )

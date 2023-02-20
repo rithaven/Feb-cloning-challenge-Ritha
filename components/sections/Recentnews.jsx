@@ -12,10 +12,10 @@ const Recentnews = () => {
                         <div className='grid space-y-4'>
                             <div><h3>08 Feb 2023</h3></div>
                             <div>
-                            <p>Earthquakes Turkey and Syria</p>
-                            <img className='h-4' src="/right.svg" alt="" />
+                                <p>Earthquakes Turkey and Syria</p>
+                                <img className='h-4' src="/right.svg" alt="" />
                             </div>
-                            
+
 
                         </div>
 
@@ -25,10 +25,10 @@ const Recentnews = () => {
                         <div className='grid space-y-4'>
                             <div><h3>08 Feb 2023</h3></div>
                             <div>
-                            <p>Earthquakes Turkey and Syria</p>
-                            <img className='h-4' src="/right.svg" alt="" />
+                                <p>Earthquakes Turkey and Syria</p>
+                                <img className='h-4' src="/right.svg" alt="" />
                             </div>
-                            
+
 
                         </div>
 
@@ -41,10 +41,10 @@ const Recentnews = () => {
                         <div className='grid space-y-4'>
                             <div><h3>08 Feb 2023</h3></div>
                             <div>
-                            <p>Earthquakes Turkey and Syria</p>
-                            <img className='h-4' src="/right.svg" alt="" />
+                                <p>Earthquakes Turkey and Syria</p>
+                                <img className='h-4' src="/right.svg" alt="" />
                             </div>
-                            
+
 
                         </div>
 
@@ -54,10 +54,10 @@ const Recentnews = () => {
                         <div className='grid space-y-4'>
                             <div><h3>08 Feb 2023</h3></div>
                             <div>
-                            <p>Earthquakes Turkey and Syria</p>
-                            <img className='h-4' src="/right.svg" alt="" />
+                                <p>Earthquakes Turkey and Syria</p>
+                                <img className='h-4' src="/right.svg" alt="" />
                             </div>
-                            
+
 
                         </div>
 
@@ -67,29 +67,21 @@ const Recentnews = () => {
                         <div className='grid space-y-4'>
                             <div><h3>08 Feb 2023</h3></div>
                             <div>
-                            <p>Earthquakes Turkey and Syria</p>
-                            <img className='h-4' src="/right.svg" alt="" />
+                                <p>Earthquakes Turkey and Syria</p>
+                                <img className='h-4' src="/right.svg" alt="" />
                             </div>
-                            
-
                         </div>
-
                     </div>
-
-
                 </div>
-
-
             </div>
-             <div className='flex justify-center mt-20'>
+            <div className='flex justify-center mt-20'>
                 <div>
-               <p className='text-xl font-semibold'>News overview</p> 
-
+                    <p className='text-xl font-semibold'>News overview</p>
                 </div>
                 <div>
                     <img className='h-6' src="/right.svg" alt="" />
                 </div>
-             </div>
+            </div>
 
         </div>
     )
