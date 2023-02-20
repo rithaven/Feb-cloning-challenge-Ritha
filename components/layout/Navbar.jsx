@@ -1,7 +1,11 @@
+import Link from 'next/link';
 import React from 'react'
+import { useState } from 'react'
 
 
 const Navbar = () => {
+    const [showmenu, setShowmenu] = useState(false);
+
     return (
         <div>
             <div className='m-auto bg-[#f7f4f2] max-w-7xl h-[400px] shadow-md '>
@@ -13,9 +17,35 @@ const Navbar = () => {
                         <p>NL</p>
                         <img className='h-6' src="/user.svg" alt="user icon" />
                         <img className='h-6' src="/search.svg" alt="search icon" />
-                        <img className='h-6' src="/menu.svg" alt="menu icon" />
+                        <div onClick={()=> setShowmenu(!showmenu)} className='cursor-pointer'>
+                            {showmenu ?
+                               <img className='h-6 ' src="/close.svg" alt="menu icon" /> :<img className='h-6' src="/menu.svg" alt="menu icon" />
+                            }
+                        
+                        </div>
+                      
                     </div>
                 </div>
+                {showmenu &&
+                     <div className='p-6 bg-white '>
+                     <Link className='p-4 text-2xl font-bold' href='/pageone'>
+                     pageone
+                     </Link>  
+                     <hr />
+                     <Link className='p-4 text-2xl font-bold' href='/pageone'>
+                     pagetwo
+                     </Link> 
+                     <hr />
+                     <Link className='p-4 text-2xl font-bold' href='/pageone'>
+                     pagethree
+                     </Link>  
+                     <hr />
+                     <Link className='p-4 text-2xl font-bold' href='/pageone'>
+                     pagefour
+                     </Link>  
+           </div>
+                }
+               
                 <div className='bg-[#fefefe]'>
                 <div className='p-6 '>
                     <p className='max-w-4xl m-auto text-5xl font-thin '>You don’t just become something, you become someone</p>
