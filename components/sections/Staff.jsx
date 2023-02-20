@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import News from './News'
+import Recentnews from './Recentnews'
 
 const Staff = () => {
     return (
@@ -61,6 +62,7 @@ const Staff = () => {
                     </div>
 
                     <News />
+                    <Recentnews />
              
         </div>
     )
