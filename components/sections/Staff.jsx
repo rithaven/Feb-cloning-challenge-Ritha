@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Footer from '../layout/Footer'
 import Calender from './Calender'
 import News from './News'
 import Recentnews from './Recentnews'
@@ -67,6 +68,7 @@ const Staff = () => {
                     <Recentnews />
                     <Calender />
                     <Teams />
+                    <Footer />
              
         </div>
     )

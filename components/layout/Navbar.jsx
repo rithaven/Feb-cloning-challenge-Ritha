@@ -59,7 +59,7 @@ const Navbar = () => {
                     </div>
                     <div className='px-4 bg-white cursor-pointer'>
                         <div className='flex items-center justify-between gap-4 mt-8 '>
-                            <p className='text-2xl font-thin text-blue-200'>About VU Amsterdam</p>
+                            <p className='text-2xl font-thin text-blue-900'>About VU Amsterdam</p>
                             <img className='h-6' src="/right-s.svg" alt="" />
 
                         </div>
