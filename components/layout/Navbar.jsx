@@ -46,7 +46,7 @@ const Navbar = () => {
 
 
                             </div>
-                            <div className='p-6 bg-white max-w-5xl m-auto grid pt-10'>
+                            <div className='p-10 bg-white max-w-5xl m-auto grid pt-10'>
                                 <Link className='p-4 text-2xl ' href='/pageone'>
                                     Study at VU Amsterdam
                                 </Link>
