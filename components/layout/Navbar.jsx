@@ -10,9 +10,10 @@ const Navbar = () => {
     return (
         <div className=''>
             <div className='m-auto bg-[#f7f4f2] max-w-7xl h-[400px] shadow-md '>
-                <div className='fixed inset-x-0 flex items-center justify-between bg-bgnav max-w-7xl mx-auto'>
-                    <div className='flex-1 p-4 bg-white shadow-sm '>
-                        <img className='h-10' src="/logo.svg" alt="" />
+                <div className='absolute'>
+                <div className='fixed inset-x-0 flex items-center justify-between bg-bgnav max-w-7xl mx-auto z-10 '>
+                    <div className='flex-1 p-4 bg-white shadow-sm  '>
+                        <img className='h-12 ml-5' src="/logo.svg" alt="" />
                     </div>
                     <div className='flex gap-4 px-4'>
                         <p>NL</p>
@@ -26,6 +27,40 @@ const Navbar = () => {
                         </div>
                       
                     </div>
+                    
+                </div>
+                {
+                        showmenu&&
+                        <div className=' bg-white  h-screen  z-[500] relative w-[1280px] overflow-y-hidden'>
+                            <div onClick={()=> setShowmenu(!showmenu)} className='cursor-pointer flex justify-end   '>
+                            <div className='bg-[#f2efed] p-6 '>
+                            {showmenu ?
+                               <img className='h-6 ' src="/close.svg" alt="menu icon" /> :<img className='h-6' src="/menu.svg" alt="menu icon" />
+                            }
+                            </div>
+                            
+                        
+                        </div>
+                        <div className='p-6 bg-white '>
+                                      <Link className='p-4 text-2xl font-bold' href='/pageone'>
+                                      pageone
+                                      </Link>  
+                                      <hr />
+                                      <Link className='p-4 text-2xl font-bold' href='/pageone'>
+                                      pagetwo
+                                      </Link> 
+                                      <hr />
+                                      <Link className='p-4 text-2xl font-bold' href='/pageone'>
+                                      pagethree
+                                      </Link>  
+                                      <hr />
+                                      <Link className='p-4 text-2xl font-bold' href='/pageone'>
+                                      pagefour
+                                      </Link> 
+                                      
+                            </div>
+                     </div>
+                    }
                 </div>
                
                 <div className='bg-[#fefefe]'>
@@ -48,10 +83,7 @@ const Navbar = () => {
                 </div>
                 </div>
             </div>
-            {
-                showmenu&&
-                <Pages />
-            }
+            
         </div>
     )
 }

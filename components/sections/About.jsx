@@ -32,8 +32,8 @@ const About = () => {
                             },
                         ].map((e, key) => {
                             return (
-                                <div key={key} className='flex gap-2 max-w-5xl mx-auto '>
-                                    <img className='h-10' src={e.image} alt="" />
+                                <div key={key} className='flex gap-4 max-w-5xl mx-auto '>
+                                    <img className='w-[29.88px]' src={e.image} alt="" />
                                     <p className='font-bold'>{e.title}</p>
                                 </div>
                             )
