@@ -3,7 +3,7 @@ import React from 'react'
 const Teams = () => {
     return (
         <div className='p-4 bg-white'>
-            <h3 className='ml-10 text-[#cc4100] p-6 text-xl '>We are VU Amsterdam</h3>
+            <h3 className='ml-10 text-[#cc4100] p-6 text-[38px] '>We are VU Amsterdam</h3>
 
             <div className='grid grid-cols-5 gap-4'>
                 {
@@ -35,12 +35,12 @@ const Teams = () => {
                         },
                     ].map((e, key) => {
                         return (
-                            <div key={key} className='gap-4 '>
-                                <img className='h-[200px]' src={e.image} alt="" />
-                                <h3 className='p-2 text-[#cc4100]'>{e.title}</h3>
-                                <div className='flex gap-4'>
-                                    <p>{e.links}</p>
-                                    <img className='h-4' src="/right.svg" alt="" />
+                            <div key={key} className=' '>
+                                <img className='h-[200px] object-cover' src={e.image} alt="" />
+                                <h3 className='p-2 text-[#cc4100] text-[24px]'>{e.title}</h3>
+                                <div className='flex gap-4 justify-between flex-col'>
+                                    <p className='tex-[18px]'>{e.links}</p>
+                                    <img className='h-4 self-end' src="/right.svg" alt="" />
                                 </div>
                             </div>
                         )
