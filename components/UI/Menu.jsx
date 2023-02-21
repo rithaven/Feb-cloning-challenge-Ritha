@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Menu = (props) => {
-    console.log('propsfd',props)
+   
   return (
     <div className='p-6 bg-white  shadow-[0 0 60px 0 rgb(0 0 0 / 10%)]'>
         <div className=' grid'>
