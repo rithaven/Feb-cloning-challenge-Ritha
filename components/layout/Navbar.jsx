@@ -8,8 +8,8 @@ const Navbar = () => {
 
     return (
         <div className=''>
-            <div className='m-auto bg-[#f7f4f2] max-w-7xl h-[400px] shadow-md '>
-                <div className='fixed inset-x-0 top-0 flex items-center justify-between bg-bgnav max-w-6xl mx-auto'>
+            <div className='m-auto bg-[#f7f4f2] max-w-6xl h-[400px] shadow-md '>
+                <div className='fixed inset-x-0 flex items-center justify-between bg-bgnav max-w-6xl mx-auto'>
                     <div className='flex-1 p-4 bg-white shadow-sm '>
                         <img className='h-10' src="/logo.svg" alt="" />
                     </div>
@@ -48,9 +48,9 @@ const Navbar = () => {
                
                 <div className='bg-[#fefefe]'>
                 <div className='p-6 '>
-                    <p className='max-w-4xl m-auto text-5xl font-thin '>You don’t just become something, you become someone</p>
+                    <p className='max-w-4xl m-auto text-5xl font-thin mt-32 '>You don’t just become something, you become someone</p>
                 </div>
-                <div className='grid max-w-5xl grid-cols-3 m-auto mt-32 '>
+                <div className='grid max-w-5xl grid-cols-3 m-auto mt-20 '>
                     <div className=' bg-[#0077b3] p-10 col-span-2'>
                         <div className='flex items-center justify-between border-b-2 '>
                             <input className='bg-[#0077b3] placeholder-white placeholder-opacity-100' type="text" placeholder='Search...' />
