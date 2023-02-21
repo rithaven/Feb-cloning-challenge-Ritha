@@ -70,7 +70,7 @@ const Calender = () => {
             </div>
 
         </div>
-        <div className='p-8 bg-bgnav'>
+        <div className='p-8 bg-[#faf7f5]'>
         <div className='bg-[#0077b3] max-w-6xl m-auto' >
                     <div className='flex items-center justify-between max-w-4xl p-6 m-auto'>
 
