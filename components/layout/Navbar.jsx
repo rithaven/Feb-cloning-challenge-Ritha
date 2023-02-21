@@ -1,11 +1,15 @@
 import Link from 'next/link';
 import React from 'react'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import Pages from './Pages';
 
 
 const Navbar = () => {
     const [showmenu, setShowmenu] = useState(false);
+    useEffect(() => {
+        document.body.style.overflow = showmenu?"hidden":"auto";
+        return () => (document.body.style.overflow = "scroll");
+    },[showmenu]);
 
     return (
         <div className=''>
@@ -33,6 +37,7 @@ const Navbar = () => {
                         showmenu&&
                         <div className=' bg-white  h-screen  z-[500] relative w-[1280px] overflow-y-hidden'>
                             <div onClick={()=> setShowmenu(!showmenu)} className='cursor-pointer flex justify-end   '>
+                                
                             <div className='bg-[#f2efed] p-6 '>
                             {showmenu ?
                                <img className='h-6 ' src="/close.svg" alt="menu icon" /> :<img className='h-6' src="/menu.svg" alt="menu icon" />
