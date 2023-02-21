@@ -45,7 +45,6 @@ const Navbar = () => {
                      </Link>  
            </div>
                 }
-               
                 <div className='bg-[#fefefe]'>
                 <div className='p-6 '>
                     <p className='max-w-4xl m-auto text-5xl font-thin mt-32 '>You don’t just become something, you become someone</p>
@@ -61,13 +60,10 @@ const Navbar = () => {
                         <div className='flex items-center justify-between gap-4 mt-8 '>
                             <p className='text-2xl font-thin text-blue-900'>About VU Amsterdam</p>
                             <img className='h-6' src="/right-s.svg" alt="" />
-
                         </div>
                     </div>
-
                 </div>
                 </div>
-               
             </div>
         </div>
     )

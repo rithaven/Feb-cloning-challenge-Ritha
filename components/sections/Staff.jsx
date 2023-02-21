@@ -2,6 +2,8 @@ import Link from 'next/link'
 import React from 'react'
 import Footer from '../layout/Footer'
 import Calender from './Calender'
+import Contactus from './Contactus'
+import Mainmenu from './Mainmenu'
 import News from './News'
 import Recentnews from './Recentnews'
 import Teams from './Teams'
@@ -68,7 +70,9 @@ const Staff = () => {
                     <Recentnews />
                     <Calender />
                     <Teams />
-                    <Footer />
+                    <Contactus />
+                    <Mainmenu />
+                    {/* <Footer /> */}
              
         </div>
     )
