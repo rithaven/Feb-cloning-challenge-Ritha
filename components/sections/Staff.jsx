@@ -20,7 +20,7 @@ const Staff = () => {
                 
                 <div className='absolute'>
                     
-                    <div className='relative right-0 pl-6 m-auto ml-[375px] bg-white -mt-[365px] '>
+                    <div className='relative right-0 pl-6 m-auto ml-[375px] bg-white -mt-[330px] '>
                  
                         <h1 className='text-[#cc4100] p-4 '>
                             <hr className='mt-4'/>
@@ -38,9 +38,9 @@ const Staff = () => {
 
 
 
-                            <div className='flex '>
+                            <div className='flex gap-4'>
 
-                                <div className='flex gap-3 mt-2'>
+                                <div className='flex gap-3 mt-2 mr-4'>
                                     <div>
                                         <button className='rounded-full bg-[#cc4100] h-3 w-3 mt-1'></button>
                                     </div>
@@ -55,7 +55,7 @@ const Staff = () => {
                                     </div>
 
 
-
+                                </div>
                                     <div className='bg-[#fcd3b6] flex justify-between p-4 gap-6 '>
 
                                         <img src="/chevron-left.svg" alt="" />
@@ -63,7 +63,7 @@ const Staff = () => {
 
 
                                     </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
