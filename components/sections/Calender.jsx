@@ -55,12 +55,12 @@ const Calender = () => {
             </div>
             
             <div className='flex justify-between mt-10 border-t border-[#333333] max-w-5xl mx-auto'>
-                <div className='flex gap-4'>  
+                <div className='flex gap-4 p-2'>  
                     <h3 className='text-2xl'>View calendar
                     </h3>
-                    <img className='h-4' src="/right.svg" alt="" />
+                    <img className='h-4 mt-2' src="/right.svg" alt="" />
                  </div>
-                 <div className='flex gap-6 p-6 bg-blue-300'>  
+                 <div className='flex gap-6 p-6 bg-blue-300 '>  
                    <img className='h-4' src="/chevron-left.svg" alt="" />
 
                     <img className='h-4' src="/chevron-right.svg" alt="" />

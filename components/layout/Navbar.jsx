@@ -9,8 +9,8 @@ const Navbar = () => {
 
     return (
         <div className=''>
-            <div className='m-auto bg-[#f7f4f2] max-w-6xl h-[400px] shadow-md '>
-                <div className='fixed inset-x-0 flex items-center justify-between bg-bgnav max-w-6xl mx-auto'>
+            <div className='m-auto bg-[#f7f4f2] max-w-7xl h-[400px] shadow-md '>
+                <div className='fixed inset-x-0 flex items-center justify-between bg-bgnav max-w-7xl mx-auto'>
                     <div className='flex-1 p-4 bg-white shadow-sm '>
                         <img className='h-10' src="/logo.svg" alt="" />
                     </div>

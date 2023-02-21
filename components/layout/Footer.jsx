@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='m-auto max-w-6xl bg-[#0077b3] p-10 text-white -mt-6'>
+    <div className='m-auto max-w-7xl bg-[#0077b3] p-10 text-white -mt-6'>
         <div className='flex gap-4'>
             {
                 [
