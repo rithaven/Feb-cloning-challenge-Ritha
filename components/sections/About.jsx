@@ -9,9 +9,9 @@ import News from './News'
 const About = () => {
     return (
         <div className='max-w-6xl m-auto '>
-            <div className='pt-4 m-auto -mt-10'>
+            <div className='pt-4 mx-auto -mt-10 max-w-7xl'>
 
-                <div className='flex items-center justify-between  bg-[#fdfdfd] p-6  '>
+                <div className='flex items-center justify-between  bg-[#fdfdfd] p-6 '>
                     {
                         [
                             {
@@ -32,7 +32,7 @@ const About = () => {
                             },
                         ].map((e, key) => {
                             return (
-                                <div key={key} className='flex gap-2 '>
+                                <div key={key} className='flex gap-2 max-w-4xl mx-auto '>
                                     <img className='h-10' src={e.image} alt="" />
                                     <p className='font-bold'>{e.title}</p>
                                 </div>

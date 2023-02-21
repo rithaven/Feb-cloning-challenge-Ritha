@@ -32,7 +32,7 @@ const Staff = () => {
                         </div>
                         <div className='flex justify-start gap-40'>
                             <div className='flex gap-2'>
-                                <Link href='/'>Read more</Link>
+                                <Link href='/' className='font-bold'>Read more</Link>
                                 <img className='h-6' src="/right.svg" alt="" />
                             </div>
 

@@ -74,7 +74,7 @@ const Recentnews = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center mt-20'>
+            <div className='flex justify-center mt-20 pb-10'>
                 <div>
                     <p className='text-xl font-semibold'>News overview</p>
                 </div>

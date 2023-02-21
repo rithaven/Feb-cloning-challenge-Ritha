@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 import { useState } from 'react'
+import Pages from './Pages';
 
 
 const Navbar = () => {
@@ -26,25 +27,7 @@ const Navbar = () => {
                       
                     </div>
                 </div>
-                {showmenu &&
-                     <div className='p-6 bg-white '>
-                     <Link className='p-4 text-2xl font-bold' href='/pageone'>
-                     pageone
-                     </Link>  
-                     <hr />
-                     <Link className='p-4 text-2xl font-bold' href='/pageone'>
-                     pagetwo
-                     </Link> 
-                     <hr />
-                     <Link className='p-4 text-2xl font-bold' href='/pageone'>
-                     pagethree
-                     </Link>  
-                     <hr />
-                     <Link className='p-4 text-2xl font-bold' href='/pageone'>
-                     pagefour
-                     </Link>  
-           </div>
-                }
+               
                 <div className='bg-[#fefefe]'>
                 <div className='p-6 '>
                     <p className='max-w-4xl m-auto text-5xl font-thin mt-32 '>You don’t just become something, you become someone</p>
@@ -58,13 +41,17 @@ const Navbar = () => {
                     </div>
                     <div className='px-4 bg-white cursor-pointer'>
                         <div className='flex items-center justify-between gap-4 mt-8 '>
-                            <p className='text-2xl font-thin text-blue-900'>About VU Amsterdam</p>
+                            <p className='text-2xl font-thin text-[#0077b3]'>About VU Amsterdam</p>
                             <img className='h-6' src="/right-s.svg" alt="" />
                         </div>
                     </div>
                 </div>
                 </div>
             </div>
+            {
+                showmenu&&
+                <Pages />
+            }
         </div>
     )
 }
