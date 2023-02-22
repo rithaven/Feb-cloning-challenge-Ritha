@@ -10,13 +10,12 @@ const Navbar = () => {
         document.body.style.overflow = showmenu ? "hidden" : "auto";
         return () => (document.body.style.overflow = "scroll");
     }, [showmenu]);
-
     return (
         <div className=''>
             <div className='m-auto bg-[#f7f4f2] max-w-7xl h-[400px] shadow-md '>
                 <div className='absolute'>
-                    <div className='fixed inset-x-0 flex items-center justify-between bg-bgnav max-w-7xl mx-auto z-10 '>
-                        <div className='flex-1 p-4 bg-white shadow-sm  '>
+                    <div className='fixed inset-x-0 z-10 flex items-center justify-between mx-auto bg-bgnav max-w-7xl '>
+                        <div className='flex-1 p-4 bg-white shadow-sm '>
                             <img className='h-12 ml-5' src="/logo.svg" alt="" />
                         </div>
                         <div className='flex gap-4 px-4'>
@@ -27,48 +26,56 @@ const Navbar = () => {
                                 {showmenu ?
                                     <img className='h-6 ' src="/close.svg" alt="menu icon" /> : <img className='h-6' src="/menu.svg" alt="menu icon" />
                                 }
-
                             </div>
-
                         </div>
-
                     </div>
                     {
                         showmenu &&
                         <div className=' bg-white  h-screen  z-[500] relative w-[1280px] overflow-y-hidden'>
-                            <div onClick={() => setShowmenu(!showmenu)} className='cursor-pointer flex justify-end   '>
+                            <div onClick={() => setShowmenu(!showmenu)} className='flex justify-end cursor-pointer '>
 
                                 <div className='bg-[#f2efed] p-6 '>
                                     {showmenu ?
-                                        <img className='h-6 material-symbols-outlined rotate-180 duration-300 ease-in-out ' src="/close.svg" alt="menu icon" /> : <img className='h-6' src="/menu.svg" alt="menu icon" />
+                                        <img className='h-6 duration-300 ease-in-out rotate-180 material-symbols-outlined ' src="/close.svg" alt="menu icon" /> : <img className='h-6' src="/menu.svg" alt="menu icon" />
                                     }
                                 </div>
-
-
                             </div>
-                            <div className='p-10 bg-white max-w-5xl m-auto grid pt-10'>
-                                <Link className='p-4 text-2xl ' href='/pageone'>
-                                    Study at VU Amsterdam
-                                </Link>
-                                <Link className='p-4 text-2xl ' href='/pagetwo'>
-                                    Research
-                                </Link>
-                                <Link className='p-4 text-2xl ' href='/pagethee'>
-                                    About VU Amsterdam
-                                </Link>
-                                <Link className='p-4 text-2xl ' href='/pagefour'>
-                                    VU press office
-                                </Link>
-                                <Link className='p-4 text-2xl ' href='/pagefive'>
-                                    Alumni
-                                </Link>
-                                <Link className='p-4 text-2xl ' href='/pagesix'>
-                                    Student
-                                </Link>
-                                <Link className='p-4 text-2xl ' href='/pageseven'>
-                                    Employee
-                                </Link>
+                            <div className='max-w-5xl p-10 pt-24 m-auto bg-white '>
+                                <div className='flex justify-start text-base font-medium space-x-14'>
+                                    <div className='grid space-y-10'>
+                                        <Link className='text-2xl ' href='/pageone'>
+                                            Study at VU Amsterdam
+                                        </Link>
+                                        <Link className='text-2xl ' href='/pagetwo'>
+                                            Research
+                                        </Link>
+                                        <Link className='text-2xl ' href='/pagethee'>
+                                            About VU Amsterdam
+                                        </Link>
+                                        <Link className='text-2xl ' href='/pagefour'>
+                                            VU press office
+                                        </Link>
+                                        <Link className='text-2xl ' href='/pagefive'>
+                                            Alumni
+                                        </Link>
+                                        <Link className='text-2xl ' href='/pagesix'>
+                                            Student
+                                        </Link>
+                                        <Link className='text-2xl ' href='/pageseven'>
+                                            Employee
+                                        </Link>
 
+                                    </div>
+                                    <div className='grid space-y-10'>
+                                        <img className='h-10' src="/plus.svg" alt="" />
+                                        <img className='h-10' src="/plus.svg" alt="" />
+                                        <img className='h-6' src="/right.svg" alt="" />
+                                        <img className='h-6' src="/right.svg" alt="" />
+                                        <img className='h-6' src="/right.svg" alt="" />
+                                        <img className='h-6' src="/right.svg" alt="" />
+                                        <img className='h-6' src="/right.svg" alt="" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     }
@@ -76,7 +83,7 @@ const Navbar = () => {
 
                 <div className='bg-[#fefefe]'>
                     <div className='p-6 '>
-                        <p className='max-w-4xl m-auto text-5xl font-thin mt-32 '>You don’t just become something, you become someone</p>
+                        <p className='max-w-4xl m-auto mt-32 text-5xl font-thin '>You don’t just become something, you become someone</p>
                     </div>
                     <div className='grid max-w-5xl grid-cols-3 m-auto mt-20 '>
                         <div className=' bg-[#0077b3] p-10 col-span-2'>
