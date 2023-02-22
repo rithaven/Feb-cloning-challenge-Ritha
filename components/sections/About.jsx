@@ -34,7 +34,7 @@ const About = () => {
                             return (
                                 <div key={key} className='flex max-w-4xl gap-2 mx-auto md:gap-4 md:max-w-5xl '>
                                     <img className='md:w-[29.88px] w-[17.88px]' src={e.image} alt="" />
-                                    <p className='text-[10px] font-bold  md:font-bold'>{e.title}</p>
+                                    <p className='md:text-[18px] text-[10px] font-bold  md:font-bold'>{e.title}</p>
                                 </div>
                             )
                         })
