@@ -3,8 +3,8 @@ import React from 'react'
 
 const Pages = () => {
   return (
-    <div className='max-w-6xl mx-auto h-screen bg-white  '>
-       <div className='p-6 bg-white max-w-4xl m-auto'>
+    <div className='h-screen max-w-4xl mx-auto bg-white md:max-w-6xl '>
+       <div className='max-w-4xl p-2 m-auto bg-white md:p-6'>
                      <Link className='p-4 text-2xl font-bold' href='/pageone'>
                      Study at VU Amsterdam
                      </Link>  

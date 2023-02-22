@@ -13,14 +13,14 @@ const Navbar = () => {
     }, [showmenu]);
     return (
         <div className=''>
-            <div className='m-auto bg-[#f7f4f2] max-w-7xl h-[400px] shadow-md '>
+            <div className='m-auto bg-[#f7f4f2] md:max-w-7xl h-[400px] shadow-md max-w-4xl  '>
                 <div className='absolute'>
-                    <div className='fixed inset-x-0 z-10 flex items-center justify-between mx-auto bg-bgnav max-w-7xl '>
-                        <div className='flex-1 p-4 bg-white shadow-sm '>
-                            <img className='h-12 ml-5' src="/logo.svg" alt="" />
+                    <div className='fixed z-10 flex items-center justify-between max-w-4xl mx-auto bg-white md:inset-x-0 md:max-w-7xl '>
+                        <div className='p-3 bg-white shadow-sm py-7 md:p-4'>
+                            <img className='h-8 ml-5 md:h-12' src="/logo.svg" alt="" />
                         </div>
-                        <div className='grid '>
-                                <div className='flex gap-4 px-4 cursor-pointer'>
+                        
+                       <div className='flex gap-4 p-8 px-6 cursor-pointer bg-bgnav'>
                                     <p>NL</p>
                                     <img onClick={()=>setmenu(!menu)} className='h-6' src="/user.svg" alt="user icon" />
                                     <img className='h-6' src="/search.svg" alt="search icon" />
@@ -29,9 +29,9 @@ const Navbar = () => {
                                             <img className='h-6 ' src="/close.svg" alt="menu icon" /> : <img className='h-6' src="/menu.svg" alt="menu icon" />
                                         }
                                     </div>
-                                </div>
-                               
                         </div>
+                               
+                        
                        
                     </div>
                     
@@ -89,7 +89,7 @@ const Navbar = () => {
 
                 <div className='bg-[#fefefe]'>
                     <div className='flex p-6'>
-                        <p className='max-w-4xl m-auto mt-32 text-5xl font-thin '>You don’t just become something, you become someone</p>
+                        <p className='max-w-4xl m-auto mt-32 text-5xl font-thin sm:text-2xl md:text-5xl'>You don’t just become something, you become someone</p>
                         {
                                 menu&&
                                 <div className='h-64 p-4 mx-auto mt-12 bg-white shadow-xl w-80'>
@@ -117,7 +117,7 @@ const Navbar = () => {
                             </div>
                             }  
                     </div>
-                    <div className='grid max-w-5xl grid-cols-3 m-auto mt-20 '>
+                    <div className='grid max-w-5xl grid-cols-1 m-auto mt-20 md:grid-cols-3 '>
                         <div className=' bg-[#0077b3] p-10 col-span-2'>
                             <div className='flex items-center justify-between border-b-2 '>
                                 <input className='bg-[#0077b3] placeholder-white placeholder-opacity-100' type="text" placeholder='Search...' />

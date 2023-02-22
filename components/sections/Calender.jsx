@@ -4,19 +4,19 @@ import Link from 'next/link'
 const Calender = () => {
     return (
         <>
-            <div className='p-5 bg-white inset-0'>
+            <div className='inset-0 p-5 bg-white'>
 
-                <div className='flex justify-between gap-4 max-w-5xl mx-auto p-5'>
-                    <h3 className=' text-[30px] text-[#0077b3]'>Calender</h3>
+                <div className='grid max-w-5xl gap-4 p-5 mx-auto md:justify-between md:flex'>
+                    <h3 className='text-[20px] md:text-[30px] text-[#0077b3]'>Calender</h3>
                     <div>
                         <div className='grid grid-cols-2 gap-4'>
-                            <div className='flex justify-between gap-4 bg-white shadow-md p-2'>
-                                <h2 className='text-[18px] font-bold text-[#333333]'> All categories </h2>
-                                <img className='h-6' src="/down.svg" alt="" />
+                            <div className='flex justify-between gap-4 p-2 bg-white shadow-md'>
+                                <h2 className='md:text-[18px] font-bold text-[#333333] text-[10px] '> All categories </h2>
+                                <img className='h-4 md:h-6' src="/down.svg" alt="" />
                             </div>
-                            <div className='flex justify-between gap-4 bg-white shadow-md p-2'>
-                                <h2 className='text-[18px] font-bold text-[#333333]'> Date </h2>
-                                <img className='h-6' src="/down.svg" alt="" />
+                            <div className='flex justify-between gap-4 p-2 bg-white shadow-md'>
+                                <h2 className='md:text-[18px] font-bold text-[#333333] text-[10px]'> Date </h2>
+                                <img className='h-4 md:h-6' src="/down.svg" alt="" />
                             </div>
 
 
@@ -24,7 +24,7 @@ const Calender = () => {
                     </div>
 
                 </div>
-                <div className='grid max-w-5xl grid-cols-4 m-auto mt-8 gap-3'>
+                <div className='grid max-w-5xl grid-cols-4 gap-3 m-auto mt-8'>
                     <div className='ml-4 space-y-2'>
                         <p className='text-[#333333] underline text-[18px]'>Other events</p>
                         <h2 className='text-[#0077b3] text-[18px] font-bold'>20 February 2023</h2>
@@ -69,7 +69,7 @@ const Calender = () => {
             </div>
             <div className='p-8 bg-[#faf7f5]'>
                 <div className='bg-[#0077b3]  p-4 max-w-5xl m-auto' >
-                    <div className='flex items-center justify-between max-w-4xl p-6 m-auto'>
+                    <div className='grid items-center max-w-4xl p-6 m-auto md:justify-between md:flex'>
 
                         <p className='text-2xl font-bold text-white'>Working at VU Amsterdam?</p>
                         <div className='p-4 bg-white'>

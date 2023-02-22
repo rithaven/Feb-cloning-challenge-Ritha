@@ -3,9 +3,9 @@ import React from 'react'
 const Card = (propos) => {
     return (
         <div>
-            <div className='p-6 bg-white shadow-xl'>
+            <div className='p-6 bg-white shadow-xl '>
                 <div className='grid gap-4'>
-                    <div className='flex justify-between'>
+                    <div className='flex justify-between sm:justify-start md:justify-between'>
                         <p className='text-3xl font-medium text-[#0077b3]'>{propos.title}</p>
                         <img className='h-6' src="/right.svg" alt="" />
                     </div>
